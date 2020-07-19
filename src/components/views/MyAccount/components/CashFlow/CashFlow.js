@@ -1,8 +1,9 @@
 import React from 'react'
 
-import { Card } from '../../components';
+import { Card } from '../../../../../components';
 
-import { AddCircle, StyledCardFlow } from './styles';
+import { StyledCardFlow } from './styles';
+import addIcon from '../../../../../assets/icons/add-icon.svg';
 
 const CashFlow = props => {
   const {
@@ -30,28 +31,28 @@ const CashFlow = props => {
             <label className="label">Inversión ladrillos</label>
             <label className="quantity">{brickInvestment}</label>
           </div>
-          <AddCircle>+</AddCircle>
+          <img alt="simbolo de suma" src={addIcon} className="icon" />
         </div>
         <div className="section">
           <div className="content">
             <label className="label">Plusvalía</label>
             <label className="quantity">{capitalGain}</label>
           </div>
-          <AddCircle>+</AddCircle>
+          <img alt="simbolo de suma" src={addIcon} className="icon" />
         </div>
         <div className="section">
           <div className="content">
             <label className="label">Fondo revolvente</label>
             <label className="quantity">{revolvingFund}</label>
           </div>
-          <AddCircle>+</AddCircle>
+          <img alt="simbolo de suma" src={addIcon} className="icon" />
         </div>
         <div className="section">
           <div className="content">
             <label className="label">Ladrillos en <br /> proceso de compra</label>
             <label className="quantity underlined">{bricksInPurchase}</label>
           </div>
-          <AddCircle>+</AddCircle>
+          <img alt="simbolo de suma" src={addIcon} className="icon" />
         </div>
         <div className="section">
           <div className="content">
@@ -59,7 +60,7 @@ const CashFlow = props => {
             <label className="quantity underlined">{pendingRents}</label>
             <label className="quantity red-quantity underlined">Liberar</label>
           </div>
-          <AddCircle>+</AddCircle>
+          <img alt="simbolo de suma" src={addIcon} className="icon" />
         </div>
         <div className="section">
           <div className="content">

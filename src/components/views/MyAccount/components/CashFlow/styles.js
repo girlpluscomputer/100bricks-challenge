@@ -1,19 +1,5 @@
 import styled from 'styled-components';
 
-export const AddCircle = styled.div`
-  min-width: 20px;  
-  width: 20px;
-  height: 20px;
-  border-radius: 9999px;
-  background-color: ${({ theme }) => theme.colors.gray};
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-`;
-
 export const StyledCardFlow = styled.div`
   display: grid;
   grid-template-columns: 15.3rem repeat(6, auto);

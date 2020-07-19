@@ -11,4 +11,5 @@ export const StyledButton = styled.div`
   justify-content: center;
   width: fit-content;
   font-size: ${({ theme }) => theme.font.regular};
+  cursor: pointer;
 `;

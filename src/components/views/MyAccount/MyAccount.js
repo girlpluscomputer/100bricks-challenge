@@ -1,14 +1,18 @@
 import React from 'react'
 
 import { Container } from './styles';
-import { CashFlow, Button } from '../../../components';
+import { Button } from '../../../components';
+import { CashFlow, MyProfits } from './components';
 
 const MyAccount = () => {
   return (
     <Container>
-      <h1>Mi cuenta</h1>
-      <Button text="Ver flujo de efectivo" />
+      <div className="head">
+        <h1>Mi cuenta</h1>
+        <Button text="Ver flujo de efectivo" />
+      </div>
       <CashFlow />
+      <MyProfits />
     </Container>
   );
 }
