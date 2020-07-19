@@ -6,7 +6,7 @@ const StyledHeader = styled.header`
   background-color: ${({ theme }) => theme.colors.white};
   border-bottom: 1px solid ${({ theme }) => theme.colors.border};
   position: fixed;
-  z-index: 10;
+  z-index: 20;
 `;
 
 export default StyledHeader;

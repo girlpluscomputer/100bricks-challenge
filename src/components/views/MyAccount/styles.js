@@ -13,4 +13,10 @@ export const Container = styled.div`
       margin: 0;
     }
   }
+
+  .divided-layout {
+    display: grid;
+    grid-template-columns: 33% auto;
+    grid-column-gap: 20px;
+  }
 `;

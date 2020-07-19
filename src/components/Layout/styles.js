@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Content = styled.div`
   width: calc(100vw - 7.9rem);
-  height: 100vh;
   position: relative;
   left: 7.9rem;
   top: 4.4rem;

@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Container } from './styles';
 import { Button } from '../../../components';
-import { CashFlow, MyProfits } from './components';
+import { CashFlow, MyBricks, MyProfits, MyRents, MySales } from './components';
 
 const MyAccount = () => {
   return (
@@ -13,6 +13,11 @@ const MyAccount = () => {
       </div>
       <CashFlow />
       <MyProfits />
+      <MyBricks />
+      <div className="divided-layout">
+        <MyRents />
+        <MySales />
+      </div>
     </Container>
   );
 }
