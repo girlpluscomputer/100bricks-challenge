@@ -2,12 +2,12 @@ import React from 'react'
 
 import { Container } from './styles';
 
-const MyAccount = () => {
+const Help = () => {
   return (
     <Container>
-      <h1>Mi cuenta</h1>
+      <h1>Ayuda</h1>
     </Container>
   );
 }
 
-export default MyAccount;
+export default Help;

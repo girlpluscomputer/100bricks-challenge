@@ -2,12 +2,12 @@ import React from 'react'
 
 import { Container } from './styles';
 
-const MyAccount = () => {
+const RemoveFunds = () => {
   return (
     <Container>
-      <h1>Mi cuenta</h1>
+      <h1>Retirar fondos</h1>
     </Container>
   );
 }
 
-export default MyAccount;
+export default RemoveFunds;

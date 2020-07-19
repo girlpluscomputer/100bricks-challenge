@@ -9,6 +9,7 @@ const theme = {
     white: '#FFF',
   },
   font: {
+    md: '24px',
     regular: '16px',
     s: '14px',
     xs: '13px',

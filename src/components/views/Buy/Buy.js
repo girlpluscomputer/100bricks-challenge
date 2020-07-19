@@ -2,12 +2,12 @@ import React from 'react'
 
 import { Container } from './styles';
 
-const MyAccount = () => {
+const Buy = () => {
   return (
     <Container>
-      <h1>Mi cuenta</h1>
+      <h1>Comprar</h1>
     </Container>
   );
 }
 
-export default MyAccount;
+export default Buy;

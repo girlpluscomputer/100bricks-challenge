@@ -4,8 +4,11 @@ const StyledSideBar = styled.aside`
   width: 7.9rem;
   height: 100vh;
   background-color: ${({ theme }) => theme.colors.white};
+  position: fixed;
+  z-index: 20;
 
-  a {
+  a,
+  .section {
     text-decoration: none;
     height: 4.4rem;
     display: flex;
@@ -29,9 +32,11 @@ const StyledSideBar = styled.aside`
   .selected {
     background-color: ${({ theme }) => theme.colors.gray};
     box-shadow: inset 0 1px 7px 0 rgba(134, 134, 134, 0.75);
+    border-left: 4px solid ${({ theme }) => theme.colors.primary};
 
     .section-title {
       color: ${({ theme }) => theme.colors.primary};
+      font-weight: bold;
     }
   }
 `;

@@ -3,7 +3,13 @@ import { NavLink } from 'react-router-dom';
 
 import StyledSidebar from './styles';
 import logo from '../../assets/logo.svg';
-import { Icon } from '../../components';
+import miCuenta from '../../assets/icons/micuenta.svg';
+import comprar from '../../assets/icons/comprar.svg';
+import vender from '../../assets/icons/vender.svg';
+import agregarFondos from '../../assets/icons/agregar-fondos.svg';
+import retirarFondos from '../../assets/icons/retirar-fondos.svg';
+import movimientos from '../../assets/icons/movimientos.svg';
+import ayuda from '../../assets/icons/ayuda.svg';
 
 const Sidebar = () => {
   return (
@@ -11,40 +17,40 @@ const Sidebar = () => {
       <NavLink to="/">
         <img alt="Logo 100 ladrillos" src={logo} />
       </NavLink>
-      <NavLink to="/valor-de-cuenta" activeClassName="selected">
+      <div className="section">
         <span className="section-title">Valor de la cuenta</span>
         <span className="section-content">$ 1.000.00 </span>
-      </NavLink>
-      <NavLink to="/saldo-disponible" activeClassName="selected">
+      </div>
+      <div className="section">
         <span className="section-title">Saldo disponible</span>
         <span className="section-content">$ 1.000.00 </span>
-      </NavLink>
+      </div>
       <NavLink to="/mi-cuenta" activeClassName="selected">
-        <Icon iconType="myaccount" />
+        <img alt="icono mi cuenta" src={miCuenta} />
         <span className="section-title">Mi cuenta</span>
       </NavLink>
       <NavLink to="/comprar" activeClassName="selected">
-        <Icon iconType="buy" />
+        <img alt="" src={comprar} />
         <span className="section-title">Comprar</span>
       </NavLink>
       <NavLink to="/vender" activeClassName="selected">
-        <Icon iconType="sell" />
+        <img alt="" src={vender} />
         <span className="section-title">Vender</span>
       </NavLink>
       <NavLink to="/agregar-fondos" activeClassName="selected">
-        <Icon iconType="addfunds" />
+        <img alt="" src={agregarFondos} />
         <span className="section-title">Agregar fondos</span>
       </NavLink>
       <NavLink to="/retirar-fondos" activeClassName="selected">
-        <Icon iconType="removefunds" />
+        <img alt="" src={retirarFondos} />
         <span className="section-title">Retirar fondos</span>
       </NavLink>
       <NavLink to="/movimientos" activeClassName="selected">
-        <Icon iconType="movements" />
+        <img alt="" src={movimientos} />
         <span className="section-title">Movimientos</span>
       </NavLink>
       <NavLink to="/ayuda" activeClassName="selected">
-        <Icon iconType="help" />
+        <img alt="" src={ayuda} />
       </NavLink>
     </StyledSidebar>
   );

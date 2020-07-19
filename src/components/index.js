@@ -1,4 +1,5 @@
+import Header from './Header';
 import Sidebar from './Sidebar';
-import Icon from './Icon';
+import Layout from './Layout';
 
-export { Sidebar, Icon };
+export { Header, Sidebar, Layout };
