@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 import { Layout } from './components';
 import {
@@ -18,6 +18,9 @@ function App() {
     <div className="App">
       <Layout>
         <Switch>
+          <Route exact path="/">
+            <Redirect to="/mi-cuenta" />
+          </Route>
           <Route exact path="/mi-cuenta" render={() => <MyAccount />} />
           <Route exact path="/comprar" render={() => <Buy />} />
           <Route exact path="/vender" render={() => <Sell />} />
