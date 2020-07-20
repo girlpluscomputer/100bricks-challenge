@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 export const Content = styled.div`
   width: calc(100vw - 7.9rem);
+  min-height: calc(100vh - 4.4rem);
+  overflow: none;
   position: relative;
   left: 7.9rem;
   top: 4.4rem;
