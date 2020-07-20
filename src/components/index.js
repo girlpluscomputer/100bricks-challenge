@@ -1,4 +1,8 @@
+import Footer from './Footer';
+import Button from './Button';
+import Header from './Header';
+import Layout from './Layout';
 import Sidebar from './Sidebar';
-import Icon from './Icon';
+import Card from './Card';
 
-export { Sidebar, Icon };
+export { Header, Button, Sidebar, Layout, Footer, Card };
