@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Header, Sidebar, Footer } from '../../components';
+import { Header, Sidebar } from '../../components';
 import { Content, HorizontalContainer } from './styles';
 
 const Layout = props => {
@@ -13,7 +13,6 @@ const Layout = props => {
         <Sidebar />
         <Content>{children}</Content>
       </HorizontalContainer>
-      {/* <Footer /> */}
     </>
   );
 }
