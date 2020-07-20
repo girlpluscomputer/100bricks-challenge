@@ -10,6 +10,7 @@ import {
   MyAccount,
   RemoveFunds,
   Sell,
+  ErrorPage
 } from './components/views';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route exact path="/retirar-fondos" render={() => <RemoveFunds />} />
           <Route exact path="/movimientos" render={() => <Movements />} />
           <Route exact path="/ayuda" render={() => <Help />} />
+          <Route exact path="/error" render={() => <ErrorPage />} />
         </Switch>
       </Layout>
     </div>

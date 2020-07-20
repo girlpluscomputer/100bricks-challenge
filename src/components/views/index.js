@@ -5,6 +5,7 @@ import Movements from './Movements';
 import MyAccount from './MyAccount';
 import RemoveFunds from './RemoveFunds';
 import Sell from './Sell';
+import ErrorPage from './ErrorPage';
 
 export {
   AddFunds,
@@ -14,4 +15,5 @@ export {
   MyAccount,
   RemoveFunds,
   Sell,
+  ErrorPage,
 };
